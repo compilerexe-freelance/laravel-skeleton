@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Laravel</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap-theme.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/sweetalert.css') }}">
 
   </head>
   <body>
@@ -21,6 +22,10 @@
       </div>
     </div>
   </nav>
+
+  @yield
+
+  <script src="{{ URL::asset('assets/js/sweetalert.min.js') }}"></script>
 
   </body>
 </html>
