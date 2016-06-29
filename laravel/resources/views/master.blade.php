@@ -23,7 +23,7 @@
     </div>
   </nav>
 
-  @yield
+  @yield('content')
 
   <script src="{{ URL::asset('assets/js/sweetalert.min.js') }}"></script>
 
